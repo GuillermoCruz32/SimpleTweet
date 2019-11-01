@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_margin="5dp"
+    android:background="#001E69">
 
     <ImageView
         android:id="@+id/ivProfileImage"
@@ -22,9 +23,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="2dp"
-        android:layout_toEndOf="@+id/ivProfileImage"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/tvHandle"
         android:text="TextView"
+        android:textColor="#5F615F"
         tools:text="_guillermocruz" />
 
     <TextView
@@ -36,5 +38,17 @@
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         android:text="TextView"
+        android:textColor="#FFFFFF"
         tools:text="Some sample text of what a tweet migh look like." />
+
+    <TextView
+        android:id="@+id/tvHandle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:text="TextView"
+        android:textColor="#FFFFFF" />
 </RelativeLayout>
