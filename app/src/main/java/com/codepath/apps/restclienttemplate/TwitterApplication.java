@@ -1,7 +1,6 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.app.Application;
-import android.content.Context;
 
 import androidx.room.Room;
 
@@ -19,6 +18,14 @@ import com.facebook.stetho.Stetho;
 public class TwitterApplication extends Application {
 
     MyDatabase myDatabase;
+
+    public static TwitterClient getRestClient(ComposeActivity composeActivity) {
+        return (TwitterClient) TwitterClient.getInstance(TwitterClient.class, composeActivity);
+    }
+
+//    public static TwitterClient getRestClient(TimelineActivity composeActivity) {
+//        return (TwitterClient) TwitterClient.getInstance(TwitterClient.class, composeActivity);
+//    }
 
     @Override
     public void onCreate() {
