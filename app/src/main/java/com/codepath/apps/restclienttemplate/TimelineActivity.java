@@ -133,7 +133,6 @@ public class TimelineActivity extends AppCompatActivity {
         client.getHomeTimeline(new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Headers headers, JSON json) {
-                Log.d("Guillermo", "Timeline successful" + json.toString());
                 JSONArray jsonArray = json.jsonArray;
                 try {
                     adapter.clear();
