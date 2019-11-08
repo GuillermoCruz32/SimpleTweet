@@ -112,6 +112,7 @@ public class TimelineActivity extends AppCompatActivity {
         client.getNextPageOfTweets(new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Headers headers, JSON json) {
+                Log.d("Guillermo", "Success");
                 JSONArray jsonArray = json.jsonArray;
                 try{
                     List<Tweet> tweets = Tweet.fromJsonArray(jsonArray);
